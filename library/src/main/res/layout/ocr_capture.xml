@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+
+    <jp.co.innovative_solutions.gxocrapi.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <jp.co.innovative_solutions.gxocrapi.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </jp.co.innovative_solutions.gxocrapi.CameraSourcePreview>
+
+
+    <TextView
+        android:id="@+id/mLabel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    <View
+        android:id="@+id/shade1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/shade2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"/>
+
+</FrameLayout>
